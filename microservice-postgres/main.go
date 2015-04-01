@@ -1,11 +1,10 @@
 package main // import "github.com/cloudspace/microservice-postgres"
 
-import "fmt"
-import "log"
-
 import (
 	"database/sql"
 	"encoding/json"
+	"fmt"
+	"log"
 	"os"
 
 	_ "github.com/lib/pq"
