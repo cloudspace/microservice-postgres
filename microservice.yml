@@ -1,0 +1,49 @@
+microservice:
+  spec_version: '2.0'
+  name: 'PostgreSQL Query'
+  description: 'Query postgres databases'
+  docker_image: 'johnleeroy/microservice-postgres'
+  docker_image_tag: '0.1'
+  repo_url: 'https://github.com/cloudspace/microservice-postgres'
+  docker_hub_url: 'https://registry.hub.docker.com/u/johnleeroy/microservice-postgres/'
+  category: 'sql'
+  tags: ['postgres', 'sql', 'database', 'db', 'query']
+  developer_name: 'johnleeroy'
+  developer_type: 'User'
+  published: true
+  command: 'pgquery [db_host] [db_port] [db_user] [db_password] [db_name] [query]'
+  inputs:
+    db_host:
+      param_type: 'Alphanumeric'
+      required: true
+      secure: false
+      description: 'database host'
+    db_port:
+      param_type: 'Alphanumeric'
+      required: true
+      secure: false
+      description: 'location port'
+    db_user:
+      param_type: 'Alphanumeric'
+      required: true
+      secure: false
+      description: 'name of the user '
+    db_password:
+      param_type: 'Alphanumeric'
+      required: true
+      secure: true
+      description: 'password'
+    db_name:
+      param_type: 'Alphanumeric'
+      required: true
+      secure: false
+      description: 'database name'
+    query:
+      param_type: 'Alphanumeric'
+      required: true
+      secure: false
+      description: 'database query'
+  outputs:
+    result:
+      param_type: 'Alphanumeric'
+      description: 'a json string of the query result'
