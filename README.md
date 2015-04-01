@@ -6,7 +6,7 @@ A service that runs postgres queries written in Go.
 Command
 With the binary:
 
-`./main [db_host] [db_port] [db_user] [db_password] [db_name] [query]`
+`./microservice-postgres [db_host] [db_port] [db_user] [db_password] [db_name] [query]`
 
 With the main.go script in the same directory:
 
@@ -28,4 +28,4 @@ Building Dockerfile:
 
 Running Dockerfile: 
 
-`docker run -ti johnleeroy/microservice-postgres ./main [...]`
+`docker run -ti johnleeroy/microservice-postgres ./microservice-postgres [...]`
