@@ -1,4 +1,4 @@
-package main
+package main //https://github.com/cloudspace/microservice-postgres
 
 import "fmt"
 import "log"
@@ -8,7 +8,7 @@ import (
 	"database/sql"
 	"os"
 	"encoding/json"
-	_ "github.com/lib/pq"
+  _ "github.com/lib/pq"
 )
 
 func main() {

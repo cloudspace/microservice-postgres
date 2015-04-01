@@ -1,6 +1,6 @@
 microservice:
   spec_version: '2.0'
-  name: 'PostgreSQL Query'
+  name: 'PostgreSQL-Query'
   description: 'Query postgres databases'
   docker_image: 'johnleeroy/microservice-postgres'
   docker_image_tag: '0.1'
