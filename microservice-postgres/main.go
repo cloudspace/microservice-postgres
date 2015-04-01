@@ -1,4 +1,4 @@
-package main //import "github.com/cloudspace/microservice-postgres"
+package main // import "github.com/cloudspace/microservice-postgres"
 
 import "fmt"
 import "log"
