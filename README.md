@@ -5,9 +5,11 @@ A service that runs postgres queries written in Go.
 ## Input
 Command
 With the binary:
+
 `./main [db_host] [db_port] [db_user] [db_password] [db_name] [query]`
 
-With the main.go script 
+With the main.go script in the same directory:
+
 `go run main.go [db_host] [db_port] [db_user] [db_password] [db_name] [query]`
 
 ## Output
@@ -20,6 +22,10 @@ query=SELECT * FROM feeds LIMIT 1
 
 ## To build
 
-Building Dockerfile: docker build -t johnleeroy/microservice-postgres
+Building Dockerfile:
 
-Running Dockerfile: docker run -ti johnleeroy/microservice-postgres ./main [...]
+`docker build -t johnleeroy/microservice-postgres`
+
+Running Dockerfile: 
+
+`docker run -ti johnleeroy/microservice-postgres ./main [...]`
